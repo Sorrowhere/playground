@@ -43,7 +43,38 @@ console.log(person.name);       // "TR.3"
 console.log("=================执行环境及作用域========================");
 /* 执行环境及作用域
  * =================================================*/
+var color = "red";
+function changeColor(){
+    if(color === "red"){
+        color = "blue";
+    } else {
+        color = "red";
+    }
+}
+changeColor();
+console.log("Color now is " + color);
 
+
+
+
+
+
+var color2 = "blue";
+function changeColor2(){
+    var anotherColor = "red";
+
+    function swapColors(){
+        var tempColor = anotherColor ;
+        anotherColor = color2;
+        color2 = tempColor;
+
+        console.log(tempColor);             // red
+        console.log(anotherColor);          // blue
+        console.log(color2);                // red
+    }
+    swapColors();
+}
+changeColor2();
 
 
 
