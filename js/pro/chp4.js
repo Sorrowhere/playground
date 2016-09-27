@@ -81,8 +81,16 @@ changeColor2();
 
 
 
-
-
+console.log("=================没有块级作用域========================");
+/* 没有块级作用域
+ * =================================================*/
+function add(num1, num2){
+    var sum = num1 + num2;
+    return sum;
+}
+var rst = add(10, 20);
+console.log(rst);                           // 30
+console.log(sum);                           // sum is not defined
 
 
 
