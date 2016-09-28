@@ -89,10 +89,51 @@ console.log(group.length);
 
 
 
+console.log("=================重新排序方法========================");
+/* 重新排序方法
+ * =================================================*/
+var val = [0,2,6,3,9,10];
+val.sort();
+console.log(val);
 
 
 
+function compare(num1,num2){
+    if(num1 < num2){
+        return -1;
+    }else if( num1 > num2){
+        return 1;
+    }else{
+        return0;
+    }
+}
 
+var values = [0,1,5,10,15];
+values.sort(compare);
+console.log(values);
+
+
+
+console.log("=================操作方法========================");
+/* 操作方法
+ * =================================================*/
+var animals = ["bear","lion","monkey","elephant","zebra"];
+
+// concat
+var animals2 = animals.concat("mouse",["cat","dog"]);
+
+// slice
+var animals3 = animals.slice(1);
+var animals4 = animals.slice(1,4);
+
+// splice
+
+
+
+console.log(animals);
+console.log(animals2);
+console.log(animals3);
+console.log(animals4);
 
 
 
