@@ -19,7 +19,12 @@ var p = {
 console.log("=================Array类型========================");
 /* Array类型
  * =================================================*/
-var colors = new Aarry();
+var colors = new Array("red","blue","yellow");
+var colors2 = ["red","blue","yellow","black"];
+colors2[4] = "pink";
+console.log(colors.length);
+console.log(colors2.length);
+console.log(colors2[4]);
 
 
 
