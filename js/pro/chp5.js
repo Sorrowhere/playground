@@ -121,27 +121,48 @@ var animals = ["bear","lion","monkey","elephant","zebra"];
 
 // concat
 var animals2 = animals.concat("mouse",["cat","dog"]);
+console.log(animals);
+console.log(animals2);
 
 // slice
 var animals3 = animals.slice(1);
 var animals4 = animals.slice(1,4);
-
-// splice
-
-
-
 console.log(animals);
-console.log(animals2);
 console.log(animals3);
 console.log(animals4);
 
 
 
+// splice
+var removed = animals.splice(0,1);
+console.log(animals);
+console.log(removed);
+
+removed = animals.splice(1,0,"dog","cat");
+console.log(animals);
+console.log(removed);
+
+removed = animals.splice(2,1,"mouse","giraffe");
+console.log(animals);
+console.log(removed);
 
 
 
+console.log("=================位置方法========================");
+/* 位置方法
+ * =================================================*/
+var numbers = [1,2,3,4,5,6,4,3,2,1];
+console.log(numbers.indexOf(4));
+console.log(numbers.lastIndexOf(4));
+
+console.log(numbers.indexOf(4,4));
+console.log(numbers.lastIndexOf(4,4));
 
 
+
+console.log("=================迭代方法========================");
+/* 迭代方法
+ * =================================================*/
 
 
 
