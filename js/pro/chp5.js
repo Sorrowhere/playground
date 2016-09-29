@@ -163,15 +163,47 @@ console.log(numbers.lastIndexOf(4,4));
 console.log("=================迭代方法========================");
 /* 迭代方法
  * =================================================*/
+var numbers2 = [1,2,3,4,5,6,4,3,2,1];
+var everyResult = numbers2.every(function(item,index,array){
+    return (item>2);
+});
+console.log(everyResult);
+
+var someResult = numbers2.some(function(item,index,array){
+    return (item > 2);
+});
+console.log(someResult);
+
+var filterResult = numbers2.filter(function(item,index,array){
+    return (item > 2);
+});
+console.log(filterResult);
+
+var mapResult = numbers2.map(function(item,index,array){
+    return item*2;
+});
+console.log(mapResult);
+
+numbers2.forEach(function(item,index,array){
+    // do something
+});
 
 
 
 
+console.log("=================归并方法========================");
+/* 归并方法
+ * =================================================*/
+var values = [1,2,3,4,5];
+var sum2 = values.reduce(function(prev,cur,index,array){
+    return prev+cur;
+})
 
-
-
-
-
+var sum3 = values.reduceRight(function(prev,cur,index,array){
+    return prev+cur;
+})
+console.log(sum2);
+console.log(sum3);
 
 
 
