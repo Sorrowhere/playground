@@ -183,6 +183,7 @@ var mapResult = numbers2.map(function(item,index,array){
     return item*2;
 });
 console.log(mapResult);
+console.log(numbers2);
 
 numbers2.forEach(function(item,index,array){
     // do something
@@ -204,6 +205,53 @@ var sum3 = values.reduceRight(function(prev,cur,index,array){
 })
 console.log(sum2);
 console.log(sum3);
+
+
+
+
+console.log("=================Date类型========================");
+/* Date类型
+ * =================================================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
