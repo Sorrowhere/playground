@@ -212,12 +212,22 @@ console.log(sum3);
 console.log("=================Date类型========================");
 /* Date类型
  * =================================================*/
+var now = new Date();
+console.log(now);
+console.log(now.toDateString());
+console.log(now.toTimeString());
+console.log(now.toLocaleDateString());
+console.log(now.toLocaleTimeString());
+console.log(now.toUTCString());
 
 
 
-
-
-
+console.log("=================RegExp类型========================");
+/* RegExp类型
+ * =================================================*/
+var pattern1 = /at/g;
+var pattern2 = /[bc]at/i;
+var pattern3 = /.at/gi;
 
 
 
