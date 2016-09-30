@@ -229,6 +229,17 @@ var pattern1 = /at/g;
 var pattern2 = /[bc]at/i;
 var pattern3 = /.at/gi;
 
+//Todo
+//看的我睡着了...
+
+
+
+console.log("=================Function类型========================");
+/* Function类型
+ * =================================================*/
+
+
+
 
 
 
