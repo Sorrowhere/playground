@@ -237,10 +237,34 @@ var pattern3 = /.at/gi;
 console.log("=================Function类型========================");
 /* Function类型
  * =================================================*/
+function sum(num1,num2){
+    return num1 + num2;
+}
+/*  函数即对象
+var sum = function(num1, num2){
+    return num1 + num2;
+};
+*/
+console.log(sum(10,10));
+
+var antherSum = sum;
+console.log(antherSum(10,10));
+
+sum = null;
+console.log(antherSum(10,10));
 
 
+// 没有重载
+function addSomeNumber(num){
+    return num + 100;
+}
 
+function addSomeNumber(num){
+    return num + 200;
+}
 
+var result = addSomeNumber(100);
+console.log(result);
 
 
 
