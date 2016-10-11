@@ -267,6 +267,28 @@ var result = addSomeNumber(100);
 console.log(result);
 
 
+// 函数声明与表达式
+console.log(total(10,10));
+function total(num1,num2){
+    return num1 + num2;
+}
+
+/*
+console.log(total1(10,10));             //报错
+var total1 = function(num1,num2){
+    return num1 + num2;
+}
+*/
+
+// 作为值的函数
+function callSomeFunction(someFunction, someArgument){
+    return someFunction(someArgument);  
+}
+function getGreeting(name){
+    return "Hello, " + name;
+}
+var fresher = callSomeFunction(getGreeting,"TR.3");
+console.log(fresher);
 
 
 
