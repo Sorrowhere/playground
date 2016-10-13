@@ -282,7 +282,7 @@ var total1 = function(num1,num2){
 
 // 作为值的函数
 function callSomeFunction(someFunction, someArgument){
-    return someFunction(someArgument);  
+    return someFunction(someArgument);
 }
 function getGreeting(name){
     return "Hello, " + name;
@@ -292,9 +292,26 @@ console.log(fresher);
 
 
 
+function createCompareison(propertyName){
+    return function(object1, object2){
+        var value1 = object1[propertyName];
+        var value2 = object2[propertyName];
+        if(value1 < value2){
+            return -1;
+        }else if(value1 > value2){
+            return 1;
+        }else{
+            return 0;
+        }
+    };
+}
 
+var data = [{name:"TR.3",age:28},{name:"sorrowhere",age:23}]
+data.sort(createCompareison("name"));
+console.log(data[0].name);
 
-
+data.sort(createCompareison("age"));
+console.log(data[0].name);
 
 
 
