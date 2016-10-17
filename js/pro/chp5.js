@@ -314,6 +314,27 @@ data.sort(createCompareison("age"));
 console.log(data[0].name);
 
 
+// this
+window.color = "red";
+var o  = { color: "blue"};
+function sayColor(){
+    console.log(this.color);
+}
+sayColor();                     // red
+o.sayColor = sayColor;
+o.sayColor()                    // blue
+
+
+
+// 函数属性和方法
+function sum(num1, num2){
+    return num1 + num2;
+}
+
+function callSum1(num1, num2){
+    return sum.apply(this, arguments);
+}
+
 
 
 
