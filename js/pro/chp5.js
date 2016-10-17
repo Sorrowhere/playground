@@ -327,13 +327,20 @@ o.sayColor()                    // blue
 
 
 // 函数属性和方法
-function sum(num1, num2){
+function sumF(num1, num2){
     return num1 + num2;
 }
 
 function callSum1(num1, num2){
-    return sum.apply(this, arguments);
+    return sumF.apply(this, arguments);
 }
+
+function callSum2(num1, num2){
+    return sumF.apply(this,[num1, num2]);
+}
+
+console.log(callSum1(10,10));
+console.log(callSum2(10,10));
 
 
 
