@@ -343,10 +343,28 @@ console.log(callSum1(10,10));
 console.log(callSum2(10,10));
 
 
+window.color = "red";
+var o1 = { color : "blue"}
+function sayColor(){
+    console.log(this.color);
+}
+sayColor();                     // red
+
+sayColor.call(this);            // red
+sayColor.call(window);          // red
+sayColor.call(o1);              // blue
 
 
 
 
+
+
+console.log("=================基本包装类型========================");
+/* 基本包装类型
+ * =================================================*/
+var s1 = "some text";
+s1.color = "blue";
+console.log(s1.color);
 
 
 
