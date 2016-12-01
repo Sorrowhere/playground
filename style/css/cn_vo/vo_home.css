@@ -1,0 +1,74 @@
+/* import css*/
+@import "base/reset.css";
+
+body{
+    background-color: #eef3f6;
+    font-family: "microsoft yahei";
+}
+
+.wrap{
+    width: 1190px;
+    margin: 0 auto;
+}
+
+
+/* user-panel
+********************************************************************************/
+.user-panel{
+    height: 180px;
+    padding: 40px 0;
+    background: url("../../../img/user_panel_bg.jpg") no-repeat;
+    overflow: hidden;
+}
+.user-panel .user-avatar{
+    float: left;
+    width: 200px;
+}
+.user-panel .user-avatar .avatar{
+    width: 100px;
+    height: 100px;
+    margin-left: 60px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 4px 2px #eee;
+    overflow: hidden;
+}
+.user-panel .user-avatar .avatar img{
+    width: 100%;
+}
+
+.user-panel .user-info{
+    float: left;
+}
+.user-panel .user-info .com-name{
+    font-size: 14px;
+    line-height: 26px;
+}
+.user-panel .user-info .com-name h3{
+    display: inline-block;
+    font-size: 18px;
+}
+.user-panel .user-ope{
+    float: right;
+    width: 200px;
+}
+
+
+
+
+
+
+/* side-l
+********************************************************************************/
+.side-l{}
+
+
+/* main
+********************************************************************************/
+.main{}
+
+
+/* side-r
+********************************************************************************/
+.side-r{}
+
