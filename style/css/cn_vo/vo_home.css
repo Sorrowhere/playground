@@ -1,5 +1,6 @@
 /* import css*/
 @import "base/reset.css";
+@import "ui/ui_icon.css";
 
 body{
     background-color: #eef3f6;
@@ -17,6 +18,7 @@ body{
 .user-panel{
     height: 180px;
     padding: 40px 0;
+    margin-bottom: 15px;
     background: url("../../../img/user_panel_bg.jpg") no-repeat;
     overflow: hidden;
 }
@@ -52,7 +54,16 @@ body{
     float: right;
     width: 200px;
 }
-
+.user-panel .user-ope .btn{
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+    margin-top: 30px;
+    background-color: #3f9ee6;
+    border-radius: 4px;
+    color: #fff;
+}
 
 
 
@@ -60,15 +71,65 @@ body{
 
 /* side-l
 ********************************************************************************/
-.side-l{}
+.side-l{
+    float: left;
+    width: 200px;
+    background-color: #fff;
+}
+.side-l .side-item{
+    padding-left: 45px;
+    border-bottom: 1px solid #e6e6e6;
+    position: relative;
+    overflow: hidden;
+}
+.side-l .side-item-hd{
+    height: 34px;
+    line-height: 34px;
+    padding-right: 15px;
+}
+.side-l .side-item-hd .icon{
+    margin-top: 8px;
+}
+.side-l .side-item-hd .side-item-icon{
+    position: absolute;
+    left: 20px;
+}
+.side-l .side-item-hd .icon-setting{
+    float: right;
+    cursor: pointer;
+}
+.side-l .side-item-hd h4{
+    display: inline-block;
+    font-weight: bold;
+}
+
+
+.side-l .side-item-lst a{
+    display: block;
+    height: 34px;
+    line-height: 34px;
+    color: #333;
+}
+.side-l .side-item-lst a:hover{
+    color: red;
+}
 
 
 /* main
 ********************************************************************************/
-.main{}
+.main{
+    float: left;
+    width: 720px;
+    margin: 0 15px;
+    background-color: #fff;
+}
 
 
 /* side-r
 ********************************************************************************/
-.side-r{}
+.side-r{
+    float: right;
+    width: 240px;
+    background-color: #fff;
+}
 

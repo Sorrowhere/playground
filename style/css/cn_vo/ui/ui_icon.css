@@ -1,0 +1,22 @@
+.icon{
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+    font-size: 0;
+    height: 16px;
+    width: 16px;
+    background: url("../../../../img/ui/ui_icon.png") no-repeat;
+}
+
+.icon-fast{
+    background-position: 0 0;
+}
+.icon-setting{
+    background-position: -16px 0;
+}
+.icon-key{
+    background-position: -32px 0;
+}
+.icon-service{
+    background-position: -64px 0;
+}
