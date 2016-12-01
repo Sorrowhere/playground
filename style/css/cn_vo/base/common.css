@@ -1,0 +1,41 @@
+.fll{
+    float: left;
+}
+.flr{
+    float: right;
+}
+.sl-vam{
+    display: table;
+    border-collapse: collapse;
+    position: relative;
+    *overflow: hidden;
+}
+.sl-vam-outer{
+    display: table-cell;
+    vertical-align: middle;
+    *display: block;
+    *position: absolute;
+    *top: 50%;
+    *left: 50%;
+}
+.sl-vam-inner{
+    text-align: center;
+    margin: 0 auto;
+    *position: relative;
+    *top: -50%;
+    *left: -50%;
+}
+.clearfix:after{
+    content: " ";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    font-size: 0;
+    clear: both;
+}
+
+.split{
+    display: inline-block;
+    margin: 0 3px;
+    color:#999;
+}
