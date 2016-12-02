@@ -75,6 +75,7 @@ body{
 .side-l{
     float: left;
     width: 200px;
+    height: 1100px;
     padding: 0 20px;
     background-color: #fff;
 }
@@ -128,15 +129,56 @@ body{
     float: left;
     width: 720px;
     margin: 0 15px;
-    background-color: #fff;
 }
 
+.main .panel:last-child{
+    margin-bottom: 0;
+}
+.panel{
+    padding: 0 20px;
+    margin-bottom: 15px;
+    background-color: #fff;
+}
+.panel-hd{
+    height: 44px;
+    line-height: 44px;
+    border-bottom: 1px solid #e6e6e6;
+    overflow: hidden;
+}
+.panel-hd h3{
+    float: left;
+    font-size: 16px;
+}
+.panel-hd .after-txt{
+    float: right;
+    font-size: 12px;
+    color: #666;
+}
+.panel-hd .more{
+    float: right;
+    font-size: 14px;
+}
+
+.panel-xs{
+    height: 200px;
+}
+.panel-s{
+    height: 220px;
+}
+.panel-m{
+    height: 255px;
+}
+.panel-l{
+    height: 300px;
+}
+.panel-xl{
+    height: 380px;
+}
 
 /* side-r
 ********************************************************************************/
 .side-r{
     float: right;
     width: 240px;
-    background-color: #fff;
 }
 
