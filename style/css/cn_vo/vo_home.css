@@ -13,6 +13,18 @@ body{
     margin: 0 auto;
 }
 
+.btn{
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+    margin-top: 30px;
+    background-color: #3f9ee6;
+    border-radius: 4px;
+    color: #fff;
+    text-align: center;
+}
 
 /* user-panel
 ********************************************************************************/
@@ -54,16 +66,6 @@ body{
 .user-panel .user-ope{
     float: right;
     width: 200px;
-}
-.user-panel .user-ope .btn{
-    display: inline-block;
-    height: 40px;
-    line-height: 40px;
-    padding: 0 20px;
-    margin-top: 30px;
-    background-color: #3f9ee6;
-    border-radius: 4px;
-    color: #fff;
 }
 
 
@@ -149,14 +151,23 @@ body{
     float: left;
     font-size: 16px;
 }
-.panel-hd .after-txt{
+.panel-hd .h3-after-txt{
+    float: left;
+    font-size: 12px;
+    color: #999;
+}
+.panel-hd .after-txt,
+.panel-hd .link,
+.panel-hd .help{
     float: right;
+}
+.panel-hd .after-txt{
     font-size: 12px;
     color: #666;
 }
-.panel-hd .more{
-    float: right;
+.panel-hd .link{
     font-size: 14px;
+    color: #06b;
 }
 
 .panel-xs{
@@ -181,4 +192,6 @@ body{
     float: right;
     width: 240px;
 }
-
+.flag{
+    margin-bottom: 15px;
+}
