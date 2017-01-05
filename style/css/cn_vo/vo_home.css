@@ -13,185 +13,132 @@ body{
     margin: 0 auto;
 }
 
-.btn{
-    display: inline-block;
-    width: 150px;
-    height: 40px;
-    line-height: 40px;
-    padding: 0 20px;
-    margin-top: 30px;
-    background-color: #3f9ee6;
-    border-radius: 4px;
-    color: #fff;
-    text-align: center;
-}
 
 /* user-panel
-********************************************************************************/
+************************************/
 .user-panel{
     height: 180px;
     padding: 40px 0;
     margin-bottom: 15px;
     background: url("../../../img/user_panel_bg.jpg") no-repeat;
-    overflow: hidden;
 }
-.user-panel .user-avatar{
+
+.user-panel>div{
     float: left;
+}
+.user-avatar{
     width: 200px;
 }
-.user-panel .user-avatar .avatar{
+.user-avatar .avatar{
     width: 100px;
     height: 100px;
     margin-left: 60px;
+
     border: 3px solid #fff;
     border-radius: 50%;
-    box-shadow: 0 0 4px 2px #eee;
+    box-shadow: 0 0 6px 3px #dde6ec;
     overflow: hidden;
 }
-.user-panel .user-avatar .avatar img{
+.user-avatar .avatar img{
     width: 100%;
 }
-
-.user-panel .user-info{
-    float: left;
-}
-.user-panel .user-info .com-name{
-    font-size: 14px;
-    line-height: 26px;
-}
-.user-panel .user-info .com-name h3{
-    display: inline-block;
+.user-info .info-tit{
+    height: 34px;
+    line-height: 34px;
     font-size: 18px;
+
+    color:#333;
 }
+.user-info .info-tit .user-name{
+    font-size: 14px;
+}
+
 .user-panel .user-ope{
     float: right;
-    width: 200px;
+    width: 195px;
+}
+.user-ope .btn{
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    width: 150px;
+    background-color: #3f9ee6;
+    border-radius: 4px;
+    text-align: center;
+    color:#fff;
+    font-size: 14px;
 }
 
 
 
+/* content
+*****************************************/
+.content{}
 
 
-/* side-l
-********************************************************************************/
 .side-l{
     float: left;
     width: 200px;
-    height: 1100px;
-    padding: 0 20px;
+    padding: 14px 20px 0;
     background-color: #fff;
-}
-.side-l .side-item{
-    padding: 23px 0 13px 24px;
-    border-bottom: 1px solid #e6e6e6;
-    position: relative;
     font-size: 14px;
 }
-.side-l .side-item-hd{
-    height: 30px;
-    line-height: 30px;
-    padding-right: 15px;
-    overflow: hidden;
-}
-.side-l .side-item-hd .icon{
-    margin-top: 9px;
-}
-.side-l .side-item-hd .side-item-icon{
-    position: absolute;
-    left: 0px;
-}
-.side-l .side-item-hd .icon-setting{
-    float: right;
-    cursor: pointer;
-}
-.side-l .side-item-hd h4{
-    display: inline-block;
-    font-weight: bold;
-}
-
-
-.side-l .side-item-lst a{
-    display: block;
-    height: 36px;
-    line-height: 36px;
-    color: #333;
-}
-.side-l .side-item-lst a:hover{
-    color: red;
+.side-l .side-item{
+    padding-left: 25px;
+    padding-bottom: 14px;
+    margin-bottom: 14px;
+    border-bottom: 1px solid #eee;
 }
 .side-l .side-item:last-child{
     border-bottom: none;
+}
+.side-l .side-item .icon{
+    margin-top: 9px;
+}
+.side-l .side-item .side-item-hd{
+    position: relative;
 
+    height: 32px;
+    line-height: 32px;
+}
+.side-l .side-item .side-item-hd .side-item-icon{
+    position: absolute;
+    left: -26px;
+}
+.side-l .side-item .side-item-hd h3{
+    display: inline-block;
+    font-weight: bold;
+}
+.side-l .side-item .side-item-hd .icon-setting{
+    float: right;
+    cursor: pointer;
+}
+.side-l .side-item .side-item-lst a{
+    display: block;
+    height: 36px;
+    line-height: 36px;
+    color:#333;
+}
+.side-l .side-item .side-item-lst a:hover{
+    color:#06b;
 }
 
 
-/* main
-********************************************************************************/
+
 .main{
     float: left;
     width: 720px;
     margin: 0 15px;
-}
-
-.main .panel:last-child{
-    margin-bottom: 0;
-}
-.panel{
-    padding: 0 20px;
-    margin-bottom: 15px;
     background-color: #fff;
 }
-.panel-hd{
-    height: 44px;
-    line-height: 44px;
-    border-bottom: 1px solid #e6e6e6;
-    overflow: hidden;
-}
-.panel-hd h3{
-    float: left;
-    font-size: 16px;
-}
-.panel-hd .h3-after-txt{
-    float: left;
-    font-size: 12px;
-    color: #999;
-}
-.panel-hd .after-txt,
-.panel-hd .link,
-.panel-hd .help{
-    float: right;
-}
-.panel-hd .after-txt{
-    font-size: 12px;
-    color: #666;
-}
-.panel-hd .link{
-    font-size: 14px;
-    color: #06b;
-}
-
-.panel-xs{
-    height: 200px;
-}
-.panel-s{
-    height: 220px;
-}
-.panel-m{
-    height: 255px;
-}
-.panel-l{
-    height: 300px;
-}
-.panel-xl{
-    height: 380px;
-}
-
-/* side-r
-********************************************************************************/
 .side-r{
-    float: right;
     width: 240px;
+    float: right;
+    background-color: #fff;
 }
-.flag{
-    margin-bottom: 15px;
-}
+
+
+
+
+
+
